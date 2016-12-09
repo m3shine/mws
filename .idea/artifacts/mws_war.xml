@@ -3,6 +3,16 @@
     <output-path>$PROJECT_DIR$/target</output-path>
     <root id="archive" name="mws.war">
       <element id="artifact" artifact-name="mws:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$PROJECT_DIR$/dist/httpcore-4.2.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/dist/httpclient-4.2.3.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/dist/commons-codec-1.6.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/dist/MWSClientJavaRuntime-1.0.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/dist/commons-logging-api-1.1.1.jar" />
+          <element id="file-copy" path="$PROJECT_DIR$/dist/MWSProducts_2011-10-01_v2016-06-01.jar" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
